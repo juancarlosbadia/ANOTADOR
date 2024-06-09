@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{39E145D6-9BC3-4DD4-90B4-02DE0E1316A1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>TXT.My.MyApplication</StartupObject>
+    <RootNamespace>TXT</RootNamespace>
+    <AssemblyName>TXT</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationIcon>PERGAM02.ICO</ApplicationIcon>
+    <ManifestCertificateThumbprint>74CE6724ABED53C0708186D1182E5FD32A888E9B</ManifestCertificateThumbprint>
+    <ManifestKeyFile>Anotador_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Programacion\VBNET\Anotador con cálculo\AnotadorTxt\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>TXT.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>TXT.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\NuevoAnotador\AnotadorTxt.Designer.vb">
+      <Link>AnotadorTxt.Designer.vb</Link>
+      <DependentUpon>AnotadorTxt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\NuevoAnotador\AnotadorTxt.vb">
+      <Link>AnotadorTxt.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abece.Designer.vb">
+      <DependentUpon>Abece.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Abece.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Director.Designer.vb">
+      <DependentUpon>Director.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Director.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formato.Designer.vb">
+      <DependentUpon>Formato.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formato.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAuxiliar.Designer.vb">
+      <DependentUpon>FormAuxiliar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormAuxiliar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIndice.Designer.vb">
+      <DependentUpon>FormIndice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormIndice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInforme.Designer.vb">
+      <DependentUpon>FormInforme.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormInforme.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTortaTimer.Designer.vb">
+      <DependentUpon>FormTortaTimer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormTortaTimer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mensaje.Designer.vb">
+      <DependentUpon>Mensaje.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mensaje.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modulo.vb" />
+    <Compile Include="ModuloArchivos.vb" />
+    <Compile Include="ModuloOrg.vb" />
+    <Compile Include="Teclado.Designer.vb">
+      <DependentUpon>Teclado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Teclado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAcercaDe.Designer.vb">
+      <DependentUpon>FormAcercaDe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormAcercaDe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalculoCarta.vb" />
+    <Compile Include="FormTimer.Designer.vb">
+      <DependentUpon>FormTimer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormTimer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FuncionesComunes.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Timer.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\NuevoAnotador\AnotadorTxt.resx">
+      <Link>AnotadorTxt.resx</Link>
+      <DependentUpon>AnotadorTxt.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Abece.resx">
+      <DependentUpon>Abece.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Director.resx">
+      <DependentUpon>Director.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formato.resx">
+      <DependentUpon>Formato.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAuxiliar.resx">
+      <DependentUpon>FormAuxiliar.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIndice.resx">
+      <DependentUpon>FormIndice.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInforme.resx">
+      <DependentUpon>FormInforme.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAcercaDe.resx">
+      <DependentUpon>FormAcercaDe.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTimer.resx">
+      <DependentUpon>FormTimer.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTortaTimer.resx">
+      <DependentUpon>FormTortaTimer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mensaje.resx">
+      <DependentUpon>Mensaje.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teclado.resx">
+      <DependentUpon>Teclado.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Anotador_TemporaryKey.pfx" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PERGAM02.ICO" />
+    <None Include="Resources\2021-08-23__12-28__21-714-giscc.jpg" />
+    <None Include="Resources\tic.wav" />
+    <None Include="My Project\app.manifest" />
+    <None Include="Resources\May.wav" />
+    <None Include="Resources\Scroll.wav" />
+    <None Include="Resources\Scroll.mp3" />
+    <None Include="Resources\tilde.wav" />
+    <None Include="Resources\tica.wav" />
+    <None Include="Resources\Goma2.wav" />
+    <None Include="Resources\Windows Ding.wav" />
+    <None Include="Resources\bolin01.bmp" />
+    <None Include="Resources\bolincito1.wmf" />
+    <None Include="Resources\bolita01.wmf" />
+    <None Include="Resources\bolita02.wmf" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxHTTSLib">
+      <Guid>{2398E321-5C6E-11D1-8C65-0060081841DE}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="HTTSLib">
+      <Guid>{2398E321-5C6E-11D1-8C65-0060081841DE}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
